@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ben Kerby | Wayside Demo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/bk.png" />
+  <link rel="apple-touch-icon" href="assets/bk.png" />
+  <link rel="shortcut icon" href="assets/bk.png" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="index.html#about">About</a>
+    <a href="index.html#resume">Resume</a>
+    <a href="index.html#portfolio">Portfolio</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  
+  <div class="content">
+    
+    <h1 >Wayside Monitor Demo</h1>
+    <hr>
+    <p>
+        Wayside Monitor was what I worked on primarily at Union Pacific. What the Wayside Monitor does is it takes data from
+        the detector/inspectors that are placed on Union Pacific tracks. If a detector throws out an alert that a wheel or bearing
+        is malfunctioning that alert is shown on the Wayside Monitor Application. This application is used by a desk that reviews
+        the information for that current alert and that wheel or bearings history. Using this information if the person managing the 
+        desk sees a trend or problem they can then alert the dispatcher to stop and/or inspect the train with the issue. What I did for this
+        project was develop the frontend with one other intern, create REST services to get and update the large amount of data that Wayside Monitor
+        processes, create report pages for the customer to gather more information on an alert. Some more managerial task I did for Wayside were:
+        migrate the project from Angular 6 to Angular 8, help with the migration from SVN to Gitlab, and move the Spring Boot backend REST Services
+        from a Java Standalone Environment to a Tomcat environment to meet Union Pacific Standards of production applications. The technology that
+        I used while collaborating on this application were: Angular 6+, Spring Boot, MyBatis, CanvasHTML, Web Components (UP Library), and Gitlab.
+    </p>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+<script src="chart.js"></script>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ben Kerby</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/bk.png" />
+  <link rel="apple-touch-icon" href="assets/bk.png" />
+  <link rel="shortcut icon" href="assets/bk.png" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  
+  <div class="content">
+    
+    <h1 id="about" style="text-align: center;"><img src="assets/bk.png" alt="BK icon" />&nbsp;About Ben Kerby</h1>
+    <hr>
+    <p>
+      <img class="profile-pic" src="assets/benkerby.jpg" alt="Picture of Ben Kerby">
+      I am an Intern Developer with experience and interest in creating elegant frontends,
+      utilizing modern technology. Over the course of one year I have assisted in updating 4
+      intranet applications, both frontend and backend with technology such as, Angular 6+,
+      Spring Boot, and Web Components. I was born and raised in Omaha Nebraska and went to the
+      University of Nebraska at Omaha, where I persued my bachelor degree in Computer Science, with
+      a minor in MIS and IT Innovation. When I am not working or in school I enjoy running, fishing, hanging out 
+      with friends, and napping with my cat Hubert.
+    </p>
+    <h3 id="resume">Resume</h3>
+    <hr>
+    <embed id="pdf" src="assets/bkerby_resume_2019.pdf"><br>
+    <a href="assets/bkerby_resume_2019.pdf" target="_blank"><i class="material-icons">cloud_download</i>&nbsp;View/Download</a>
+    <h3 id="portfolio">Portfolio</h3>
+    <hr>
+    <h3>Tavern</h3>
+    <p>
+      Tavern was an app that I created for my class Introduction to Software Engineering. Tavern 
+      allows the users to start tabs immediately at whichever bar,
+      they’re currently at or going to. When ordering drinks, a bartender will
+      then be able to add drinks to the tab. The user can track their tab on the app.
+      Most importantly, the user can pay off the tab and leave
+      a tip through the application. There is no need for either the user
+      or the bartender to seek each other out for tab closure. The app was created using Ionic 4, Angular 6+,
+      Paypal API, and Google firebase (hosting, authentication and firestore backend).
+    </p>
+    <a href="https://taverndev.web.app/">Tavern Application Website</a><br>
+    <a href="https://github.com/bkerby/tavern/">Tavern Github Repo</a>
+    <h3>Wayside Monitor</h3>
+    <p>
+      Wayside Monitor was what I worked on primarily at Union Pacific. What the Wayside Monitor does is it takes data from
+      the detector/inspectors that are placed on Union Pacific tracks. If a detector throws out an alert that a wheel or bearing
+      is malfunctioning that alert is shown on the Wayside Monitor Application. This application is used by a desk that reviews
+      the information for that current alert and that wheel or bearings history. Using this information if the person managing the 
+      desk sees a trend or problem they can then alert the dispatcher to stop and/or inspect the train with the issue. What I did for this
+      project was develop the frontend with one other intern, create REST services to get and update the large amount of data that Wayside Monitor
+      processes, create report pages for the customer to gather more information on an alert. Some more managerial task I did for Wayside were:
+      migrate the project from Angular 6 to Angular 8, help with the migration from SVN to Gitlab, and move the Spring Boot backend REST Services
+      from a Java Standalone Environment to a Tomcat environment to meet Union Pacific Standards of production applications. The technology that
+      I used while collaborating on this application were: Angular 6+, Spring Boot, MyBatis, CanvasHTML, Web Components (UP Library), and Gitlab.
+    </p>
+    <a href="waysideDemo.html">Wayside Monitor Demo Page</a><br>
+    <h3 id="skills">Skills</h3>
+    <hr>
+    <p>
+      The chart below shows the skills and technology that I am familiar and have experience with. The skill level of each skill is based
+      on how comfortable and experienced I am with that certian skill. Five means I have a advanced understanding of the technology, while one means
+      I have a basic understanding of the technology.
+    </p>
+    <div class="chart-container" style="height:500px; width:auto">
+      <canvas id="myChart"></canvas>
+    </div>
+    <h3 id="contact">Contact</h3>
+    <hr>
+    <p>Feel free to contact me for any questions you may have.</p>
+    <i class="material-icons">smartphone</i>:&nbsp;<a href="tel: 4027391670">(402) 739-1670</a><br>
+    <i class="material-icons">email</i>:&nbsp;<a href="mailto: bpkerby97@gmail.com">bpkerby97@gmail.com</a>
+    <br><br>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+<script src="chart.js"></script>
+
+</html>
