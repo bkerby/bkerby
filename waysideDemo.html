@@ -24,23 +24,75 @@
     <a href="index.html#skills">Skills</a>
     <a href="index.html#contact">Contact</a>
   </div>
-  
+
   <div class="content">
-    
-    <h1 >Wayside Monitor Demo</h1>
+
+    <h1>Wayside Monitor Demo</h1>
     <hr>
-    <p>
-        Wayside Monitor was what I worked on primarily at Union Pacific. What the Wayside Monitor does is it takes data from
-        the detector/inspectors that are placed on Union Pacific tracks. If a detector throws out an alert that a wheel or bearing
-        is malfunctioning that alert is shown on the Wayside Monitor Application. This application is used by a desk that reviews
-        the information for that current alert and that wheel or bearings history. Using this information if the person managing the 
-        desk sees a trend or problem they can then alert the dispatcher to stop and/or inspect the train with the issue. What I did for this
-        project was develop the frontend with one other intern, create REST services to get and update the large amount of data that Wayside Monitor
-        processes, create report pages for the customer to gather more information on an alert. Some more managerial task I did for Wayside were:
-        migrate the project from Angular 6 to Angular 8, help with the migration from SVN to Gitlab, and move the Spring Boot backend REST Services
-        from a Java Standalone Environment to a Tomcat environment to meet Union Pacific Standards of production applications. The technology that
-        I used while collaborating on this application were: Angular 6+, Spring Boot, MyBatis, CanvasHTML, Web Components (UP Library), and Gitlab.
-    </p>
+    Union Pacific Employees can go
+    <a href="https://xdev.home.www.uprr.com/wdi/wayside-monitor/secure/index.html#/online-alerts">here</a>
+    to veiw the development if they are connected to the network.<br><br>
+    NOTE: In the demo videos information has been REDACTED in order to meet Union Pacific's policies.<br><br>
+    <div class="card">
+      <video controls width="100%">
+        <source src="assets/waysideVideo1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <p>
+          In this first video you can see the main dashboard page. Here users can click on each alert in the table. From
+          that alert
+          they can view the history of that wheel bearing in the history chart down below which shows each passing of that
+          bearing. They can also view
+          where that wheel bearing is on the full train view to the right. In the train view they can compare the alerted
+          bearing to the surronded bearings
+          and in the history chart they can see if the alert is a trend or just a one of that doesn't need an action. After
+          deciding one what action needs to be
+          performed for that specific alert the user can select an action to perform in the drop down table or use a
+          hotkey in order to perform that action. Then the user can move to the next pending alert (Red highlighted row) and so on.
+          The chart below uses chartJS and CanvasHTML and the full train view to the right uses canvasHTML.
+        </p>
+      </div>
+    </div>
+    <br><br>
+    <div class="card">
+      <video controls width="100%">
+        <source src="assets/waysideVideo2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <p>
+          This second video shows one of the report pages where users can come to get more information on a specific
+          bearing or alert in order to decide
+          if the alert needs to be escalated. This page specifically shows detector information from opened and closed alerts.
+          There are many report pages such as this one for different information about the alerted train, bearing, or wheel.
+          However, this page specifically was created and
+          developed by me.
+        </p>
+      </div>
+    </div>
+    <br><br>
+    <div class="card">
+      <video controls width="100%">
+        <source src="assets/waysideVideo3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <p>
+          This last demo video shows of the search page. This page allows for users to view passings that aren't
+          necessarily on the main dashboard page.
+          If the passing didn't throw an alert or the passing of the train is older than two weeks it can be viewed on
+          this search page. The user can view
+          passings on a specific train, passings from a specific detector, or passings that threw alerts to the main
+          dashboard. On this page they can enter
+          more search criteria then allowed on the main dashboard. This can help users filter down to a specific problem
+          whether it be a problem with a
+          detector, train, or certain passing. This page was created by me. I reused the full train view and history chart components.
+          But I developed the search page tabs, tables, and filters.
+        </p>
+      </div>
+    </div>
+    <br><br>
   </div>
 </body>
 
